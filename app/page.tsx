@@ -42,15 +42,13 @@ export default function DigitalRiseHerWebsite() {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
-  className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
+  className="text-lg md:text-xl italic text-gray-600 max-w-2xl mx-auto mb-10"
 >
- Empowering young girls in underserved communities through digital skills.
+  Empowering young girls in underserved communities through digital skills.
 </motion.p>
 
-        <p className="text-lg md:text-xl mb-8">
-          Empowering girls in underserved Ogun State communities with digital
-          skills, confidence, and opportunity.
-        </p>
+
+       
 
         <div className="flex justify-center gap-4">
           <Button>Support the Project</Button>
