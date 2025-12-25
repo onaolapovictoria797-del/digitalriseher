@@ -13,12 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DigitalRiseHer",
-  description: "Empowering girls with digital skills",
+  title: {
+    default: "DigitalRiseHer Initiative",
+    template: "%s | DigitalRiseHer",
+  },
+  description:
+    "DigitalRiseHer Initiative empowers girls in Ogun State, Nigeria with digital skills, confidence, and access to technology.",
   icons: {
     icon: "/favicon.png",
   },
 };
+
 
 
 export default function RootLayout({
