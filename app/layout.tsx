@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "DigitalRiseHer",
   description: "Empowering girls with digital skills",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
