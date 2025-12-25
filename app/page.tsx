@@ -55,6 +55,60 @@ export default function DigitalRiseHerWebsite() {
           <Button>Partner With Us</Button>
         </div>
       </section>
+{/* Donor & Partner Focus */}
+<section className="px-6 py-20 max-w-6xl mx-auto">
+  <h2 className="text-3xl font-bold text-center mb-12">
+    Why DigitalRiseHer Exists
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-8">
+    {/* Problem */}
+    <Card>
+      <h3 className="text-xl font-semibold mb-3 text-pink-600">
+        The Problem
+      </h3>
+      <p>
+        In many underserved communities in Ogun State, girls grow up without
+        access to computers, digital education, or mentors. This digital gap
+        limits their confidence, career options, and future opportunities.
+      </p>
+    </Card>
+
+    {/* Impact */}
+  <Card>
+  <h3 className="text-xl font-semibold mb-3 text-pink-600">
+    Our Impact
+  </h3>
+  <p>
+    DigitalRiseHer equips girls aged 9–18 with practical, hands-on digital
+    skills that prepare them for the future. Participants receive guided
+    training in typing and digital literacy, introductory graphic design, and
+    basic coding, alongside mentorship that builds confidence, creativity, and
+    leadership.
+  </p>
+  <p className="mt-3">
+    Beyond skills, the program helps girls see themselves as capable learners,
+    problem-solvers, and future leaders in a digital world.
+  </p>
+</Card>
+
+
+    {/* Ask */}
+    <Card>
+      <h3 className="text-xl font-semibold mb-3 text-pink-600">
+        How You Can Help
+      </h3>
+      <p className="mb-3">
+        We are seeking support to expand our impact through:
+      </p>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Laptops and tablets</li>
+        <li>Internet access and learning tools</li>
+        <li>Volunteer mentors and trainers</li>
+      </ul>
+    </Card>
+  </div>
+</section>
 
       {/* About */}
       <section className="px-6 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
