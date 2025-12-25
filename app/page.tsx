@@ -86,6 +86,70 @@ export default function DigitalRiseHerWebsite() {
         </p>
         <Button>Donate or Partner</Button>
       </section>
+      {/* Contact / Support */}
+<section className="px-6 py-20 text-center max-w-5xl mx-auto">
+  <h2 className="text-3xl font-bold mb-4">
+    Contact & Support DigitalRiseHer
+  </h2>
+
+  <p className="text-gray-600 mb-12">
+    For partnerships, support, or general enquiries, you can reach any of our
+    team members below.
+  </p>
+
+  <div className="grid gap-8 md:grid-cols-2">
+
+  {/* Phone Numbers */}
+  <div className="bg-white rounded-2xl shadow p-6 text-left">
+    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+      📞 Contact Numbers
+    </h3>
+    <ul className="space-y-2 text-gray-700">
+      <li>+234 703 550 6591</li>
+      <li>+234 902 200 3942</li>
+      <li>+234 816 724 4828</li>
+    </ul>
+  </div>
+
+  {/* Emails */}
+  <div className="bg-white rounded-2xl shadow p-6 text-left">
+    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+      ✉️ Email Addresses
+    </h3>
+    <ul className="space-y-2 text-gray-700">
+      <li>Ogungbemi_Oluwaseun@yahoo.com</li>
+      <li>rhodachinazaekpere@gmail.com</li>
+      <li>onaolapovictoria797@gmail.com</li>
+    </ul>
+  </div>
+
+</div>
+
+{/* Main Contact Actions */}
+<div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
+
+  {/* Clickable Main Email */}
+  <a
+    href="mailto:digitalriseher@gmail.com"
+    className="px-6 py-3 rounded-2xl bg-pink-600 text-white font-medium hover:bg-pink-700 transition"
+  >
+    ✉️ Email DigitalRiseHer
+  </a>
+
+  {/* WhatsApp Link */}
+  <a
+    href="https://wa.me/2348166264948"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 rounded-2xl bg-green-600 text-white font-medium hover:bg-green-700 transition"
+  >
+    💬 Chat on WhatsApp
+  </a>
+
+</div>
+
+</section>
+
 
       <footer className="px-6 py-6 text-center text-sm bg-gray-900 text-gray-300">
         © {new Date().getFullYear()} DigitalRiseHer Initiative
