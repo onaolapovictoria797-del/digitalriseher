@@ -18,11 +18,39 @@ export const metadata: Metadata = {
     template: "%s | DigitalRiseHer",
   },
   description:
-    "DigitalRiseHer Initiative empowers girls in Ogun State, Nigeria with digital skills, confidence, and access to technology.",
+    "DigitalRiseHer empowers girls in underserved Ogun State communities with hands-on digital skills, mentorship, and confidence.",
+
   icons: {
     icon: "/favicon.png",
   },
+
+  openGraph: {
+    title: "DigitalRiseHer Initiative",
+    description:
+      "Empowering girls in underserved communities through hands-on digital skills and mentorship.",
+    url: "https://digitalriseher.netlify.app", // replace if Netlify gives a different URL
+    siteName: "DigitalRiseHer",
+    images: [
+      {
+        url: "/social-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "DigitalRiseHer Initiative – Empowering Girls Through Digital Skills",
+      },
+    ],
+    locale: "en_NG",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "DigitalRiseHer Initiative",
+    description:
+      "Empowering girls through digital skills, mentorship, and opportunity.",
+    images: ["/social-preview.png"],
+  },
 };
+
 
 
 
