@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+
 
 /* Simple UI components (no imports needed) */
 function Button({ children }: { children: React.ReactNode }) {
@@ -20,6 +22,13 @@ export default function DigitalRiseHerWebsite() {
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800">
       {/* Hero */}
       <section className="px-6 py-20 text-center max-w-5xl mx-auto">
+        <Image
+    src="/logo.png"
+    alt="DigitalRiseHer Logo"
+    width={120}
+    height={120}
+    className="mx-auto mb-6"
+  />
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
