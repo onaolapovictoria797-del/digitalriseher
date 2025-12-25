@@ -33,7 +33,8 @@ export default function DigitalRiseHerWebsite() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold mb-6"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
+
         >
           DigitalRiseHer Initiative
         </motion.h1>
@@ -50,13 +51,14 @@ export default function DigitalRiseHerWebsite() {
 
        
 
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+
           <Button>Support the Project</Button>
           <Button>Partner With Us</Button>
         </div>
       </section>
 {/* Donor & Partner Focus */}
-<section className="px-6 py-20 max-w-6xl mx-auto">
+<section className="px-6 py-16 sm:py-20 max-w-6xl mx-auto">
   <h2 className="text-3xl font-bold text-center mb-12">
     Why DigitalRiseHer Exists
   </h2>
@@ -131,7 +133,7 @@ export default function DigitalRiseHerWebsite() {
       </section>
 
       {/* Call to Action */}
-      <section className="px-6 py-20 text-center bg-pink-600 text-white">
+      <section className="px-6 py-16 sm:py-20 text-center bg-pink-600 text-white">
         <h2 className="text-3xl font-bold mb-4">
           Join Us in Bridging the Digital Divide
         </h2>
@@ -141,7 +143,7 @@ export default function DigitalRiseHerWebsite() {
         <Button>Donate or Partner</Button>
       </section>
       {/* Contact / Support */}
-<section className="px-6 py-20 text-center max-w-5xl mx-auto">
+<section className="px-6 py-16 sm:py-20 text-center max-w-5xl mx-auto">
   <h2 className="text-3xl font-bold mb-4">
     Contact & Support DigitalRiseHer
   </h2>
