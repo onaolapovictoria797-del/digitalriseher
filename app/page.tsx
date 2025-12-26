@@ -22,13 +22,17 @@ export default function DigitalRiseHerWebsite() {
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800">
       {/* Hero */}
       <section className="px-6 py-20 text-center max-w-5xl mx-auto">
- <Image
-  src="/hero.jpg"
-  alt="Girls learning digital skills through DigitalRiseHer"
-  width={1600}
-  height={900}
-  className="w-full max-h-[500px] object-cover rounded-2xl mb-10"
-/>
+ <div className="mb-12">
+  <Image
+    src="/hero.jpg"
+    alt="Empowering girls through digital skills – DigitalRiseHer"
+    width={1600}
+    height={600}
+    className="w-full h-[280px] sm:h-[380px] md:h-[460px] object-cover rounded-2xl"
+    priority
+  />
+</div>
+
      
       
         <motion.h1
