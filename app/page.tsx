@@ -28,10 +28,11 @@ export default function DigitalRiseHerWebsite() {
     alt="Empowering girls through digital skills – DigitalRiseHer"
     width={1600}
     height={600}
-    className="w-full h-[280px] sm:h-[380px] md:h-[460px] object-cover rounded-2xl"
+    className="w-full rounded-2xl object-contain sm:object-cover sm:h-[380px] md:h-[420px]"
     priority
   />
 </div>
+
 
      
       
