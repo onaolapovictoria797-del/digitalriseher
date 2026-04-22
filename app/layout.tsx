@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+ metadataBase: new URL("https://digitalriseher.netlify.app"),
+
   title: {
     default: "DigitalRiseHer Initiative",
     template: "%s | DigitalRiseHer",

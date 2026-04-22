@@ -31,6 +31,23 @@ export default function DigitalRiseHerWebsite() {
     className="w-full rounded-2xl object-contain sm:object-cover sm:h-[380px] md:h-[420px]"
     priority
   />
+  <section className="px-6 py-16 max-w-6xl mx-auto">
+  <h2 className="text-2xl font-semibold mb-4">
+    Learning to Type with Confidence
+  </h2>
+
+  <p>
+    Through guided practice, the girls improved their typing skills,
+    building speed, accuracy, and confidence in using computers.
+  </p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+    <Image src="/typing1.png" alt="Girls typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+<Image src="/typing2.png" alt="Typing training" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+<Image src="/typing3.png" alt="Students practicing typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+<Image src="/typing4.png" alt="A girl in Papalanto High School Jnr practicing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+  </div>
+</section>
 </div>
 
 
