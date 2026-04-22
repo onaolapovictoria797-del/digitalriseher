@@ -20,18 +20,55 @@ function Card({ children }: { children: React.ReactNode }) {
 export default function DigitalRiseHerWebsite() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800">
-      {/* Hero */}
-      <section className="px-6 py-20 text-center max-w-5xl mx-auto">
- <div className="mb-12">
-  <Image
-    src="/hero.jpg"
-    alt="Empowering girls through digital skills – DigitalRiseHer"
-    width={1600}
-    height={600}
-    className="w-full rounded-2xl object-contain sm:object-cover sm:h-[380px] md:h-[420px]"
-    priority
-  />
-  <section className="px-6 py-16 max-w-6xl mx-auto">
+    {/* Hero */}
+<section className="px-6 py-20 text-center max-w-5xl mx-auto">
+  <div className="mb-12 relative">
+
+    {/* Hero Image */}
+    <Image
+      src="/hero.jpg"
+      alt="Empowering girls through digital skills – DigitalRiseHer"
+      width={1600}
+      height={600}
+      className="w-full rounded-2xl object-contain sm:object-cover sm:h-[380px] md:h-[420px]"
+      priority
+    />
+
+    {/* Overlay */}
+    
+
+
+    {/* Content on Image */}
+    <div className="absolute bottom-6 left-6 px-4">
+      <div className="text-center text-purple-900">
+
+       
+        
+
+        {/* Text */}
+        <div>
+          <h1 className="text-xl md:text-3xl font-bold-text">
+            DigitalRiseHer Initiative
+          </h1>
+          <p className="text-sm md:text-lg italic mt-1">
+            Empower Her. Ignite Her Future.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  {/* Buttons */}
+  <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+    <Button>Support the Project</Button>
+    <Button>Partner With Us</Button>
+  </div>
+</section>
+
+{/* Typing Section */}
+<section className="px-6 py-16 max-w-6xl mx-auto">
   <h2 className="text-2xl font-semibold mb-4">
     Learning to Type with Confidence
   </h2>
@@ -43,44 +80,20 @@ export default function DigitalRiseHerWebsite() {
 
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
     <Image src="/typing1.png" alt="Girls typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
-<Image src="/typing2.png" alt="Typing training" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
-<Image src="/typing3.png" alt="Students practicing typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
-<Image src="/typing4.png" alt="A girl in Papalanto High School Jnr practicing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+    <Image src="/typing2.png" alt="Typing training" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+    <Image src="/typing3.png" alt="Students practicing typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
+    <Image src="/typing4.png" alt="Students practicing typing" width={400} height={300} className="rounded-xl object-cover w-full h-48" />
   </div>
 </section>
-</div>
+
 
 
      
       
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
-
-        >
-          DigitalRiseHer Initiative
-        </motion.h1>
-
-<motion.p
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8 }}
-  className="text-lg md:text-xl italic text-gray-600 max-w-2xl mx-auto mb-10"
->
-  Empowering young girls in underserved communities through digital skills.
-</motion.p>
-
-
+        
        
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-
-          <Button>Support the Project</Button>
-          <Button>Partner With Us</Button>
-        </div>
-      </section>
+        
 {/* Donor & Partner Focus */}
 <section className="px-6 py-16 sm:py-20 max-w-6xl mx-auto">
   <h2 className="text-3xl font-bold text-center mb-12">
