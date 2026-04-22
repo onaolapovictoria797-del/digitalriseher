@@ -21,51 +21,75 @@ export default function DigitalRiseHerWebsite() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800">
     {/* Hero */}
-<section className="px-6 py-20 text-center max-w-5xl mx-auto">
-  <div className="mb-12 relative">
 
-    {/* Hero Image */}
+{/* Hero */}
+<section className="px-6 py-20 max-w-6xl mx-auto">
+  <div className="relative rounded-2xl overflow-hidden">
+
+    {/* Background Image */}
     <Image
       src="/hero.jpg"
-      alt="Empowering girls through digital skills – DigitalRiseHer"
+      alt="Girls learning digital skills"
       width={1600}
       height={600}
-      className="w-full rounded-2xl object-contain sm:object-cover sm:h-[380px] md:h-[420px]"
+      className="w-full object-cover h-[420px]"
       priority
     />
 
-    {/* Overlay */}
-    
+    {/* Soft overlay for readability */}
+    <div className="absolute inset-0 bg-white/60"></div>
+
+    {/* Content */}
+    <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
+
+      <div className="max-w-lg">
+
+        {/* Title */}
+        {/* Title with Logo */}
+<div className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="DigitalRiseHer Logo"
+    width={60}
+    height={60}
+  />
+
+  <h1 className="text-3xl md:text-5xl font-bold text-purple-900 leading-tight">
+    DigitalRiseHer Initiative
+  </h1>
+</div>
 
 
-    {/* Content on Image */}
-    <div className="absolute bottom-6 left-6 px-4">
-      <div className="text-center text-purple-900">
+        {/* Tagline */}
+        <p className="mt-3 text-lg md:text-xl italic text-purple-800">
+          Empower Her. Ignite Her Future.
+        </p>
 
-       
-        
+        {/* Supporting line (THIS is what makes it premium) */}
+        <p className="mt-4 text-gray-700 text-base md:text-lg">
+          Equipping girls in underserved communities with practical digital skills,
+          confidence, and mentorship to thrive in a rapidly changing world.
+        </p>
 
-        {/* Text */}
-        <div>
-          <h1 className="text-xl md:text-3xl font-bold-text">
-            DigitalRiseHer Initiative
-          </h1>
-          <p className="text-sm md:text-lg italic mt-1">
-            Empower Her. Ignite Her Future.
-          </p>
+        {/* Buttons */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+
+          <button className="px-6 py-3 rounded-2xl bg-pink-600 text-white font-medium hover:bg-pink-700 transition">
+            Support the Project
+          </button>
+
+          <button className="px-6 py-3 rounded-2xl border border-purple-700 text-purple-900 font-medium hover:bg-purple-50 transition">
+            Partner With Us
+          </button>
+
         </div>
 
       </div>
+
     </div>
-
-  </div>
-
-  {/* Buttons */}
-  <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-    <Button>Support the Project</Button>
-    <Button>Partner With Us</Button>
   </div>
 </section>
+
 
 {/* Typing Section */}
 <section className="px-6 py-16 max-w-6xl mx-auto">
