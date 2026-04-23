@@ -111,6 +111,55 @@ export default function DigitalRiseHerWebsite() {
 </section>
 
 
+{/* Story + Images Section */}
+<section className="px-6 py-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+  {/* Images */}
+  <div className="grid grid-cols-2 gap-4">
+    <Image
+      src="/story1.jpg"
+      alt="Girls learning typing"
+      width={400}
+      height={300}
+      className="rounded-xl object-cover w-full h-40"
+    />
+    <Image
+      src="/story2.jpg"
+      alt="Training session"
+      width={400}
+      height={300}
+      className="rounded-xl object-cover w-full h-40"
+    />
+    <Image
+      src="/story3.jpg"
+      alt="Students designing"
+      width={400}
+      height={300}
+      className="rounded-xl object-cover w-full h-40 col-span-2"
+    />
+  </div>
+
+  {/* Story Card */}
+  <div className="bg-white/90 backdrop-blur-md shadow-xl rounded-2xl p-6 md:p-10 border border-gray-100">
+
+    <h2 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">
+      A Story of Transformation
+    </h2>
+
+    <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+      In just seven weeks, from February to March, 47 girls embarked on a life-changing journey into the world of digital skills. They were introduced to typing, Microsoft Word, Excel, and CorelDraw—tools they had never accessed before.
+      <br /><br />
+      Many started with no prior experience using a computer. But by the end of the program, they were confidently typing, creating documents, and designing simple graphics.
+      <br /><br />
+      Beyond technical skills, they gained something even more powerful—confidence, curiosity, and the belief that they too belong in a digital future.
+    </p>
+
+  </div>
+
+</section>
+
+
+
 
      
       
