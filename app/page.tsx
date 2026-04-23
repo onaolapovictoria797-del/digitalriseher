@@ -158,6 +158,48 @@ export default function DigitalRiseHerWebsite() {
 
 </section>
 
+{/* Sensitization Program Section */}
+<section className="px-6 py-16 max-w-6xl mx-auto">
+
+  {/* Heading */}
+  <h2 className="text-3xl font-bold text-purple-900 text-center mb-10">
+    Empowering Girls Beyond the Classroom
+  </h2>
+
+  {/* Content + Images */}
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+
+    {/* Text */}
+    <div className="bg-white shadow-xl rounded-2xl p-6 md:p-8 border border-gray-100">
+      <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+        As part of our outreach efforts, DigitalRiseHer conducted a sensitization program at Papalanto High School (Junior), reaching 126 girls with vital knowledge and life-shaping conversations.
+
+        <br /><br />
+
+        The session focused on menstrual health and hygiene, helping girls understand that menstruation is a natural and healthy part of life. They were guided on how to care for their bodies, manage their periods with confidence, and reject feelings of shame or limitation.
+
+        <br /><br />
+
+        Beyond health education, the girls were encouraged to believe in themselves, build confidence, and embrace their potential. They were introduced to diverse career opportunities and reminded that being a girl is not a limitation—but a strength.
+
+        <br /><br />
+
+        By the end of the session, many of the girls left feeling more informed, confident, and empowered to take charge of their future without fear or doubt.
+      </p>
+    </div>
+
+    {/* Images */}
+    <div className="grid grid-cols-2 gap-4">
+      <Image src="/sens1.jpg" alt="Sensitization session" width={400} height={300} className="rounded-xl object-cover w-full h-40" />
+      <Image src="/sens2.jpg" alt="Girls listening during session" width={400} height={300} className="rounded-xl object-cover w-full h-40" />
+      <Image src="/sens3.jpg" alt="Group discussion" width={400} height={300} className="rounded-xl object-cover w-full h-40" />
+      <Image src="/sens4.jpg" alt="Confidence building session" width={400} height={300} className="rounded-xl object-cover w-full h-40" />
+      <Image src="/sens5.jpg" alt="Girls engaged in training" width={400} height={300} className="rounded-xl object-cover w-full h-40 col-span-2" />
+    </div>
+
+  </div>
+
+</section>
 
 
 
