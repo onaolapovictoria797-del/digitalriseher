@@ -89,7 +89,22 @@ export default function DigitalRiseHerWebsite() {
     </div>
   </div>
 </section>
+{/* Mission Statement */}
+<section className="px-6 py-12 max-w-4xl mx-auto text-center">
 
+  <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 shadow-sm border border-pink-100">
+
+    <h2 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">
+      Our Mission
+    </h2>
+
+    <p className="text-lg md:text-xl italic text-gray-700 leading-relaxed">
+      “We believe every girl deserves the opportunity to thrive in a digital world.”
+    </p>
+
+  </div>
+
+</section>
 
 {/* Typing Section */}
 <section className="px-6 py-16 max-w-6xl mx-auto">
