@@ -39,31 +39,47 @@ export default function DigitalRiseHerWebsite() {
     {/* Soft overlay for readability */}
     <div className="absolute inset-0 bg-white/60"></div>
 
+{/* Top Right Logo */}
+<div className="absolute top-8 right-8 z-20 flex items-center gap-3">
+
+  <Image
+    src="/logo.png"
+    alt="DigitalRiseHer Logo"
+    width={55}
+    height={55}
+  />
+
+  <h1 className="text-xl md:text-2xl font-semibold text-purple-900">
+    DigitalRiseHer
+  </h1>
+
+</div>
     {/* Content */}
     <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
+{/* Top Left Tagline + Donate */}
+<div className="absolute top-8 left-8 z-20 flex items-center gap-5">
 
+  <p className="text-sm md:text-base tracking-[0.08em] text-purple-900 italic"
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+>
+  Empower Her. Ignite Her Future.
+</p>
+
+  <a
+    href="#donate"
+    className="rotate-12 bg-pink-600 text-white px-7 py-3 rounded-md hover:bg-pink-700 transition"
+  >
+    Donate
+  </a>
+
+</div>
       <div className="max-w-lg">
 
         {/* Title */}
         {/* Title with Logo */}
-<div className="flex items-center gap-3">
-  <Image
-    src="/logo.png"
-    alt="DigitalRiseHer Logo"
-    width={60}
-    height={60}
-  />
-
-  <h1 className="text-3xl md:text-5xl font-bold text-purple-900 leading-tight">
-    DigitalRiseHer Initiative
-  </h1>
-</div>
 
 
-        {/* Tagline */}
-        <p className="mt-3 text-lg md:text-xl italic text-purple-800">
-          Empower Her. Ignite Her Future.
-        </p>
+        
 
         {/* Supporting line (THIS is what makes it premium) */}
         <p className="mt-4 text-gray-700 text-base md:text-lg">
