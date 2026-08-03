@@ -1,9 +1,8 @@
-
 "use client";
-import Navbar from "./components/Navbar";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Hero from "./components/Hero";
+
 
 /* Simple UI components (no imports needed) */
 function Button({ children }: { children: React.ReactNode }) {
@@ -20,92 +19,106 @@ function Card({ children }: { children: React.ReactNode }) {
 
 export default function DigitalRiseHerWebsite() {
   return (
-    <div  className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800 pt-24">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white text-gray-800">
     {/* Hero */}
- <Navbar />
-<Hero />
 
-{/* Vision Mission Values */}
+{/* Hero */}
+<section className="px-6 py-20 max-w-6xl mx-auto">
+  <div className="relative rounded-2xl overflow-hidden">
 
-<section className="px-8 py-24 max-w-7xl mx-auto">
+    {/* Background Image */}
+    <Image
+      src="/hero.jpg"
+      alt="Girls learning digital skills"
+      width={1600}
+      height={600}
+      className="w-full object-cover h-[420px]"
+      priority
+    />
 
-<h2
-className="text-4xl font-bold text-center text-purple-900 mb-16"
-style={{ fontFamily: "var(--font-bodoni)" }}
+    {/* Soft overlay for readability */}
+    <div className="absolute inset-0 bg-white/60"></div>
+
+{/* Top Right Logo */}
+<div className="absolute top-8 right-8 z-20 flex items-center gap-3">
+
+  <Image
+    src="/logo.png"
+    alt="DigitalRiseHer Logo"
+    width={55}
+    height={55}
+  />
+
+  <h1 className="text-xl md:text-2xl font-semibold text-purple-900">
+    DigitalRiseHer
+  </h1>
+
+</div>
+    {/* Content */}
+    <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
+{/* Top Left Tagline + Donate */}
+<div className="absolute top-8 left-8 z-20 flex items-center gap-5">
+
+  <p className="text-sm md:text-base tracking-[0.08em] text-purple-900 italic"
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
-Our Purpose
-</h2>
-
-<div className="grid md:grid-cols-3 gap-8">
-
-{/* Vision */}
-
-<div className="rounded-[35px] bg-gradient-to-br from-pink-50 to-white shadow-xl p-10 hover:-translate-y-2 transition duration-300 border border-pink-100">
-
-<div className="text-5xl mb-6">👁</div>
-
-<h3 className="text-2xl font-bold text-purple-900 mb-4">
-Vision
-</h3>
-
-<p className="text-gray-700 leading-8">
-To create a future where every girl,
-regardless of her background,
-has equal access to digital skills,
-technology and opportunities
-to thrive.
+  Empower Her. Ignite Her Future.
 </p>
 
-</div>
-
-{/* Mission */}
-
-<div className="rounded-[35px] bg-gradient-to-br from-purple-50 to-white shadow-xl p-10 hover:-translate-y-2 transition duration-300 border border-purple-100">
-
-<div className="text-5xl mb-6">🎯</div>
-
-<h3 className="text-2xl font-bold text-purple-900 mb-4">
-Mission
-</h3>
-
-<p className="text-gray-700 leading-8">
-To empower girls in underserved
-communities through practical
-digital literacy,
-mentorship,
-innovation
-and confidence building.
-</p>
+  <a
+    href="#donate"
+    className="rotate-12 bg-pink-600 text-white px-7 py-3 rounded-md hover:bg-pink-700 transition"
+  >
+    Donate
+  </a>
 
 </div>
+      <div className="max-w-lg">
 
-{/* Values */}
+        {/* Title */}
+        {/* Title with Logo */}
 
-<div className="rounded-[35px] bg-gradient-to-br from-pink-50 to-purple-50 shadow-xl p-10 hover:-translate-y-2 transition duration-300 border border-pink-100">
 
-<div className="text-5xl mb-6">💜</div>
+        
 
-<h3 className="text-2xl font-bold text-purple-900 mb-4">
-Our Values
-</h3>
+        {/* Supporting line (THIS is what makes it premium) */}
+        <p className="mt-4 text-gray-700 text-base md:text-lg">
+          Equipping girls in underserved communities with practical digital skills,
+          confidence, and mentorship to thrive in a rapidly changing world.
+        </p>
 
-<ul className="space-y-3 text-gray-700">
+        {/* Buttons */}
+        <div className="mt-6 flex flex-col sm:flex-row gap-4">
 
-<li>✨ Inclusion</li>
+          <button className="px-6 py-3 rounded-2xl bg-pink-600 text-white font-medium hover:bg-pink-700 transition">
+            Support the Project
+          </button>
 
-<li>✨ Innovation</li>
+          <button className="px-6 py-3 rounded-2xl border border-purple-700 text-purple-900 font-medium hover:bg-purple-50 transition">
+            Partner With Us
+          </button>
 
-<li>✨ Leadership</li>
+        </div>
 
-<li>✨ Integrity</li>
+      </div>
 
-<li>✨ Excellence</li>
+    </div>
+  </div>
+</section>
+{/* Mission Statement */}
+<section className="px-6 py-12 max-w-4xl mx-auto text-center">
 
-</ul>
+  <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 shadow-sm border border-pink-100">
 
-</div>
+    <h2 className="text-2xl md:text-3xl font-bold text-purple-900 mb-4">
+      Our Mission
+    </h2>
 
-</div>
+    <p className="text-lg md:text-xl italic text-gray-700 leading-relaxed">
+      “We believe every girl deserves the opportunity to thrive in a digital world.”
+    </p>
+
+  </div>
 
 </section>
 
@@ -225,74 +238,7 @@ Our Values
       
         
        
-{/* Impact Numbers */}
 
-<section className="py-24 bg-gradient-to-r from-pink-50 via-white to-purple-50">
-
-<div className="max-w-7xl mx-auto px-8">
-
-<h2
-className="text-4xl text-center text-purple-900 mb-16"
-style={{ fontFamily: "var(--font-bodoni)" }}
->
-Our Impact
-</h2>
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-47
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Girls Trained
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-126
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Girls Reached
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-3
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Communities
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-10
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Weeks
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
         
 {/* Donor & Partner Focus */}
 <section className="px-6 py-16 sm:py-20 max-w-6xl mx-auto">
