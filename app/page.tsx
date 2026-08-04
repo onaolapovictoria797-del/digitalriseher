@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Hero from "./components/Hero";
 import Impact from "./components/Impact";
 import Programmes from "./components/Programmes";
+import Testimonials from "./components/Testimonials";
 
 /* Simple UI components (no imports needed) */
 function Button({ children }: { children: React.ReactNode }) {
@@ -31,6 +32,7 @@ export default function DigitalRiseHerWebsite() {
 {/* Vision Mission Values */}
 <Impact />
 <Programmes />
+<Testimonials />
 
 <section className="px-8 py-24 max-w-7xl mx-auto">
 
