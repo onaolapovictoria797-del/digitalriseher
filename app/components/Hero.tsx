@@ -1,8 +1,29 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import { AnimatePresence, motion } from "framer-motion";
 export default function Hero() {
+  const images = [
+  "/hero.jpg",
+  "/hero2.jpg",
+  "/hero3.jpg",
+  "/hero4.jpg",
+  "/hero5.jpg",
+  "/hero6.jpg",
+  "/hero7.jpg",
+];
+
+
+const [currentImage, setCurrentImage] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  }, 5000); // Changes every 5 seconds
+
+  return () => clearInterval(interval);
+}, []);
   return (
     <section
       id="home"
@@ -52,14 +73,33 @@ export default function Hero() {
         {/* Hero Image */}
         <div className="mt-16">
 
-          <Image
-            src="/hero.jpg"
-            alt="Girls learning digital skills"
-            width={1600}
-            height={900}
-            priority
-            className="w-full rounded-[40px] shadow-2xl object-cover max-h-[650px]"
-          />
+          <AnimatePresence mode="wait">
+
+  <motion.div
+    key={currentImage}
+    initial={{ opacity: 0, scale: 1 }}
+    animate={{ opacity: 1, scale: 1.05 }}
+    exit={{ opacity: 0 }}
+    transition={{
+      opacity: { duration: 1.2 },
+      scale: { duration: 5 },
+    }}
+    className="w-full"
+  >
+
+    <Image
+      src={images[currentImage]}
+      alt="DigitalRiseHer"
+      width={700}
+      height={700}
+      priority
+      className="rounded-[40px] shadow-2xl object-cover w-full h-[420px] md:h-[520px] lg:h-[650px]"
+    />
+
+  </motion.div>
+
+</AnimatePresence>
+
 
         </div>
 

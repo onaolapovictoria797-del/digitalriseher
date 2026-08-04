@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Hero from "./components/Hero";
+import Impact from "./components/Impact";
+import Programmes from "./components/Programmes";
 
 /* Simple UI components (no imports needed) */
 function Button({ children }: { children: React.ReactNode }) {
@@ -25,7 +27,10 @@ export default function DigitalRiseHerWebsite() {
  <Navbar />
 <Hero />
 
+
 {/* Vision Mission Values */}
+<Impact />
+<Programmes />
 
 <section className="px-8 py-24 max-w-7xl mx-auto">
 
@@ -225,74 +230,7 @@ Our Values
       
         
        
-{/* Impact Numbers */}
 
-<section className="py-24 bg-gradient-to-r from-pink-50 via-white to-purple-50">
-
-<div className="max-w-7xl mx-auto px-8">
-
-<h2
-className="text-4xl text-center text-purple-900 mb-16"
-style={{ fontFamily: "var(--font-bodoni)" }}
->
-Our Impact
-</h2>
-
-<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-47
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Girls Trained
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-126
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Girls Reached
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-3
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Communities
-</p>
-
-</div>
-
-<div className="bg-white rounded-[35px] shadow-xl p-10 text-center hover:scale-105 transition">
-
-<h3 className="text-6xl font-bold text-pink-600">
-10
-</h3>
-
-<p className="mt-4 text-gray-700 font-medium">
-Weeks
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
         
 {/* Donor & Partner Focus */}
 <section className="px-6 py-16 sm:py-20 max-w-6xl mx-auto">
