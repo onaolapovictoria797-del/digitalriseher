@@ -295,7 +295,7 @@ Our Values
           <h2 className="text-2xl font-semibold mb-4">About DigitalRiseHer</h2>
           <p>
             DigitalRiseHer is a girl-centered digital literacy initiative reaching
-            60 girls across Abese, Papalanto, and Orile-Ifo in Ogun State.
+            girls across underserved communities in Ogun State.
           </p>
         </Card>
 
